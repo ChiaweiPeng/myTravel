@@ -1,6 +1,6 @@
 <template>
   <div class="list-container">
-    <div class="detail-list" v-for="item of list" :key="item.id">
+    <div class="detail-list" v-for="(item, index) of list" :key="index">
         <div class="list-title border-bottom"><span class="list-icon"></span>{{item.title}}</div>
         <div v-if="item.children" class="item-children">
           <detail-list :list="item.children"></detail-list>
