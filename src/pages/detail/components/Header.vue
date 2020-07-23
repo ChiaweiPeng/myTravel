@@ -50,7 +50,7 @@ export default {
     position absolute
     top .1rem
     left .1rem
-    background rgba(0, 0, 0, .8)
+    background rgba(0, 0, 0, .7)
     width .8rem
     height .8rem
     line-height  .8rem
@@ -60,6 +60,7 @@ export default {
     .abs-back-icon
         font-size .4rem
 .header-fixed
+    z-index 2
     position fixed
     top 0
     left 0

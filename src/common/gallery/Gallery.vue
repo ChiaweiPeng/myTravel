@@ -39,6 +39,7 @@ export default {
 .gallery-container >>> .swiper-container
     overflow inherit
 .gallery-container
+    z-index 99
     position :fixed
     top: 0
     bottom : 0
