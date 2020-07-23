@@ -4,14 +4,20 @@
             热销推荐
         </div>
         <ul>
-            <li class="rec-container border-bottom" v-for="item of recLists" :key="item.id">
+            <router-link
+            tag="li"
+            class="rec-container border-bottom"
+            v-for="item of recLists"
+            :key="item.id"
+            :to="'/detail/' + item.id"
+            >
                 <img class="rec-img" :src="item.imgUrl" />
                 <div class="rec-info">
                     <p class="rec-title">{{item.title}}</p>
                     <p class="rec-desc">{{item.desc}}</p>
                     <button class="rec-btn">查看详情</button>
                 </div>
-            </li>
+            </router-link>
         </ul>
         <div class="rec-more">查看所有产品</div>
     </div>
