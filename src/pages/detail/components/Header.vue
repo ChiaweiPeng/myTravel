@@ -35,8 +35,11 @@ export default {
       }
     }
   },
-  mounted () {
+  activated () {
     window.addEventListener('scroll', this.handleScroll)
+  },
+  deactivated () {
+    window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>
@@ -47,7 +50,7 @@ export default {
     position absolute
     top .1rem
     left .1rem
-    background #000
+    background rgba(0, 0, 0, .8)
     width .8rem
     height .8rem
     line-height  .8rem
