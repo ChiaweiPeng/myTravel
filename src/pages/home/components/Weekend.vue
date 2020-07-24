@@ -25,11 +25,12 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+@import '~styles/varibles.styl'
 .title
   line-height : .8rem
-  background : #eee
+  background : #f5f5f5
   padding-left:.3rem
-  color :$darkText
+  color :$blueText
   font-weight:bold
 .qnr-container
     .qnr-img-wrapper

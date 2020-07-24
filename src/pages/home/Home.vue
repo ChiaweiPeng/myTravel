@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="main">
         <home-header></home-header>
         <home-swiper :swiperList="swiperList"></home-swiper>
         <home-icons :iconsList="iconsList"></home-icons>
@@ -66,6 +66,7 @@ export default{
 }
 </script>
 
-<style>
-
+<style lang="stylus" scoped>
+.main
+  background #f5f5f5
 </style>

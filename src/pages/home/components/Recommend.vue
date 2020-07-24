@@ -3,7 +3,7 @@
         <div class="title">
             热销推荐
         </div>
-        <ul>
+        <ul class="content">
             <router-link
             tag="li"
             class="rec-container border-bottom"
@@ -18,8 +18,8 @@
                     <button class="rec-btn">查看详情</button>
                 </div>
             </router-link>
+            <div class="rec-more">查看所有产品</div>
         </ul>
-        <div class="rec-more">查看所有产品</div>
     </div>
 </template>
 
@@ -35,38 +35,44 @@ export default {
 <style lang="stylus" scoped>
     @import '~styles/varibles.styl'
     @import '~styles/mixins.styl'
+    .border-bottom
+        &:before
+            border-color #ddd
     .title
         line-height : .8rem
-        background : #eee
         padding-left:.3rem
-        color :$darkText
+        color :$blueText
         font-weight:bold
-    .rec-container
-        display : flex
-        padding :.15rem
-        .rec-img
-            width: 1.7rem
-            height: 1.7rem
-        .rec-info
-            margin-left: .2rem
-            flex :1
-            min-width:0
-            .rec-title
-                font-size: .3rem
-                font-weight: bold
-                margin-bottom: .2rem
-                color: $darkText
-                ellipsis()
-            .rec-desc
-                color: #999
-                ellipsis()
-            .rec-btn
-                margin-top : .4rem
-                background : #ff9300
-                color :#fff
-                padding : 0 .2rem
-                border-radius: .1rem
-                font-size:.26rem
+    .content
+        border-radius .3rem
+        background #fff
+        .rec-container
+            display : flex
+            padding :.15rem
+            border-radius .2rem
+            .rec-img
+                width: 1.7rem
+                height: 1.7rem
+            .rec-info
+                margin-left: .2rem
+                flex :1
+                min-width:0
+                .rec-title
+                    font-size: .3rem
+                    font-weight: bold
+                    margin-bottom: .2rem
+                    color: $darkText
+                    ellipsis()
+                .rec-desc
+                    color: #999
+                    ellipsis()
+                .rec-btn
+                    margin-top : .4rem
+                    background : #ff9300
+                    color :#fff
+                    padding : 0 .2rem
+                    border-radius: .1rem
+                    font-size:.26rem
     .rec-more
         line-height:.8rem
         text-align :center

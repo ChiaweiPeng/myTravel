@@ -3,12 +3,12 @@
         <div class="header-left">
             <div class="iconfont back-icon">&#xe658;</div>
         </div>
-        <div class="header-input">
-            <span class="iconfont">&#xe63c;</span> 输入城市/景点/游玩</div>
-        <router-link to="/city">
-            <div class="header-right">{{this.city}}
-                <span class="iconfont">&#xe65c;</span>
-            </div>
+        <router-link tag="div" to="/city" class="header-input">
+            <span class="iconfont">&#xe63c;</span> 输入城市/景点/游玩
+        </router-link>
+        <router-link tag="div" to="/city" class="header-right">
+            {{this.city}}
+            <span class="iconfont">&#xe65c;</span>
         </router-link>
    </div>
 </template>

@@ -46,6 +46,9 @@ export default {
 <style lang="stylus" scoped>
     @import '~styles/varibles.styl'
     @import '~styles/mixins.styl'
+  .icons
+    background #fff
+    border-radius .3rem
     .icons-grid
         display :grid
         grid-template-columns: repeat(4,1fr)
