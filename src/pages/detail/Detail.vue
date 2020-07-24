@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <detail-banner
     :sightName="sightName"
     :bannerImg="bannerImg"
@@ -7,7 +7,6 @@
     ></detail-banner>
     <detail-header></detail-header>
     <detail-list :list="categoryList"></detail-list>
-    <div class="content"></div>
   </div>
 </template>
 
@@ -58,6 +57,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.content
-    height 50rem
+.container
+  background #f5
 </style>

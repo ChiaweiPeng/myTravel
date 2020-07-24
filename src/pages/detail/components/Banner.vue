@@ -7,6 +7,27 @@
                 <div class="banner-num"><span class="iconfont img-icon">&#xe61e;</span>{{this.galleryImgs.length}}</div>
             </div>
         </div>
+         <div class="banner-map">
+              <div class="map-info">
+                <div class="sight-score">
+                  <div class="sight-score-info">
+                      <div class="sight-score-score"><span class="score-num">5.0</span>分 超赞</div>
+                      <div class="sight-coms"><span class="coms-num">590</span>条评论 <span class="gl-num">50</span>条攻略</div>
+                  </div>
+                  <span class="small-arrow">></span>
+                </div>
+
+                <div class="sight-intro">
+                  <div class="sight-intro-info">
+                  景点简介
+                  <div class="sight-coms">开放时间、贴士</div>
+                  </div>
+                  <span class="small-arrow">></span>
+                </div>
+              </div>
+              <div class="map-pos"><span class="map-icon iconfont">&#xe62b;</span>北京市东城区景山前街4号<span class="small-arrow">></span></div>
+          </div>
+
         <fade-animation>
             <common-gallery :imgs="galleryImgs" v-show="showGallery" @close="handleGalleryClose"></common-gallery>
         </fade-animation>
@@ -55,7 +76,7 @@ export default {
         position :absolute
         left :0
         right:0
-        bottom: 0
+        bottom: .1rem
         line-height : .6rem
         display :flex
         color :#fff
@@ -76,4 +97,47 @@ export default {
             .img-icon
                 font-size:.28rem
                 margin-right :.1rem
+.banner-map
+    background  #fff
+    border-radius .1rem
+    position relative
+    top -.1rem
+    padding .2rem
+    padding-bottom .1rem
+    margin-bottom .1rem
+    .map-info
+        display grid
+        grid-template-columns repeat(2,1fr)
+        .sight-score
+            display flex
+            justify-content space-between
+            border-right 1px #ccc solid
+            height 1rem
+            padding-right .2rem
+            .sight-score-score
+                color #ff8c12
+                .score-num
+                  font-size .4rem
+          .sight-coms
+              margin-top .2rem
+              color #999
+              font-size .25rem
+            .small-arrow
+                line-height 1rem
+                color #999
+        .sight-intro
+            display  flex
+            justify-content space-between
+            height 1rem
+            padding-left  .2rem
+            .sight-intro-info
+              margin-top .1rem
+    .map-pos
+      line-height .5rem
+      margin-top .3rem
+      .map-icon
+        margin .2rem
+      .small-arrow
+        float right
+        color  #999
 </style>
