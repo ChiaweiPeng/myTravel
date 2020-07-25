@@ -24,7 +24,7 @@ export default{
       iconsList: [],
       recLists: [],
       qnrLists: [],
-      lasyCity: ''
+      lastCity: ''
     }
   },
   components: {
@@ -54,12 +54,12 @@ export default{
     }
   },
   mounted () {
-    this.lasyCity = this.city
+    this.lastCity = this.city
     this.getHomeInfo()
   },
   activated () {
-    if (this.lasyCity !== this.city) {
-      this.lasyCity = this.city
+    if (this.lastCity !== this.city) {
+      this.lastCity = this.city
       this.getHomeInfo()
     }
   }

@@ -4,9 +4,18 @@
     :sightName="sightName"
     :bannerImg="bannerImg"
     :galleryImgs="galleryImgs"
+    :scoreNum="scoreNum"
+    :comsNum="comsNum"
+    :glNum="glNum"
+    :mapPos="mapPos"
     ></detail-banner>
     <detail-header></detail-header>
-    <detail-list :list="categoryList"></detail-list>
+    <detail-list
+    :recomList="recomList"
+    :titleTitle="titleTitle"
+    :ticketsList="ticketsList"
+    :sightCommit="sightCommit"
+    ></detail-list>
   </div>
 </template>
 
@@ -27,7 +36,14 @@ export default {
       sightName: '',
       bannerImg: '',
       galleryImgs: [],
-      categoryList: []
+      scoreNum: 0,
+      comsNum: 0,
+      glNum: 0,
+      mapPos: '',
+      recomList: [],
+      titleTitle: '',
+      ticketsList: [],
+      sightCommit: []
     }
   },
   methods: {
@@ -47,6 +63,14 @@ export default {
         this.bannerImg = data.bannerImg
         this.galleryImgs = data.galleryImgs
         this.categoryList = data.categoryList
+        this.scoreNum = parseFloat(data.scoreNum)
+        this.comsNum = data.comsNum
+        this.glNum = data.glNum
+        this.mapPos = data.mapPos
+        this.recomList = data.recomList
+        this.titleTitle = data.titleTitle
+        this.ticketsList = data.ticketsList
+        this.sightCommit = data.sightCommit
       }
     }
   },

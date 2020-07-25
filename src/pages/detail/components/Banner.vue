@@ -11,8 +11,8 @@
               <div class="map-info">
                 <div class="sight-score">
                   <div class="sight-score-info">
-                      <div class="sight-score-score"><span class="score-num">5.0</span>分 超赞</div>
-                      <div class="sight-coms"><span class="coms-num">590</span>条评论 <span class="gl-num">50</span>条攻略</div>
+                      <div class="sight-score-score"><span class="score-num"> {{ this.scoreNum }} </span>分 超赞</div>
+                      <div class="sight-coms"><span class="coms-num">{{this.comsNum}}</span>条评论 <span class="gl-num">{{this.glNum}}</span>条攻略</div>
                   </div>
                   <span class="small-arrow">></span>
                 </div>
@@ -25,7 +25,7 @@
                   <span class="small-arrow">></span>
                 </div>
               </div>
-              <div class="map-pos"><span class="map-icon iconfont">&#xe62b;</span>北京市东城区景山前街4号<span class="small-arrow">></span></div>
+              <div class="map-pos"><span class="map-icon iconfont">&#xe62b;</span>{{this.mapPos}}<span class="small-arrow">></span></div>
           </div>
 
         <fade-animation>
@@ -42,7 +42,11 @@ export default {
   props: {
     sightName: String,
     bannerImg: String,
-    galleryImgs: Array
+    galleryImgs: Array,
+    scoreNum: Number,
+    comsNum: Number,
+    glNum: Number,
+    mapPos: String
   },
   data () {
     return {

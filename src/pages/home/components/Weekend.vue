@@ -33,6 +33,7 @@ export default {
   color :$blueText
   font-weight:bold
 .qnr-container
+    background #fff
     .qnr-img-wrapper
         overflow:hidden
         height : 0

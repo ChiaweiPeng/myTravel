@@ -3,44 +3,16 @@
     <div class="detail-list-com">
       <div class="area-title">去哪儿推荐</div>
       <div class="area-list">
-          <div class="area-list-item">
+          <div class="area-list-item" v-for="item of recomList" :key="item.id">
             <div class="item-info">
-               <div class="list-item-title">北京故宫大门票+珍宝馆+资深导游讲解（配无线耳麦）*成人票</div>
-               <ul class="item-tips">
-                 <li class="item-ding"><span class="time-icon iconfont">&#xe605;</span>可订明日</li>
-                 <li class="item-tui">随时退</li>
+               <div class="list-item-title">{{item.recTitle}}</div>
+               <ul class="item-tips" v-if="item.recTips">
+                 <li class="item-ding" v-if="item.recTips.Ding"><span class="time-icon iconfont">&#xe605;</span>可订明日</li>
+                 <li class="item-tui"  v-if="item.recTips.Tui">随时退</li>
                </ul>
             </div>
             <div class="price-area">
-              <span class="item-price">￥119</span>
-              <button class="item-yd">立即预订</button>
-            </div>
-          </div>
-
-           <div class="area-list-item">
-            <div class="item-info">
-               <div class="list-item-title">北京故宫大门票+珍宝馆+资深导游讲解（配无线耳麦）*成人票</div>
-               <ul class="item-tips">
-                 <li class="item-ding"><span class="time-icon iconfont">&#xe605;</span>可订明日</li>
-                 <li class="item-tui">随时退</li>
-               </ul>
-            </div>
-            <div class="price-area">
-              <span class="item-price">￥119</span>
-              <button class="item-yd">立即预订</button>
-            </div>
-          </div>
-
-           <div class="area-list-item">
-            <div class="item-info">
-               <div class="list-item-title">北京故宫大门票+珍宝馆+资深导游讲解（配无线耳麦）*成人票</div>
-               <ul class="item-tips">
-                 <li class="item-ding"><span class="time-icon iconfont">&#xe605;</span>可订明日</li>
-                 <li class="item-tui">随时退</li>
-               </ul>
-            </div>
-            <div class="price-area">
-              <span class="item-price">￥119</span>
+              <span class="item-price">￥{{item.recPrice}}</span>
               <button class="item-yd">立即预订</button>
             </div>
           </div>
@@ -49,82 +21,24 @@
 
     <div class="detail-list-com">
       <div class="area-title">景区门票</div>
-      <div class="area-title-fu"><span class="fu-border"></span>北京故宫门票</div>
+      <div class="area-title-fu"><span class="fu-border"></span>{{this.titleTitle}}</div>
       <div class="tickets-container">
-        <div class="tickets-type">
+        <div class="tickets-type" v-for="item of ticketsList" :key="item.id">
           <div class="tickets-type-title">
-            <span class="tickets-name">成人票</span>
-            <span class="tickets-price">￥140 <span class="qi">起</span> <i class="pull-icon iconfont">&#xe662;</i> </span>
+            <span class="tickets-name">{{item.ticType}}</span>
+            <span class="tickets-price">￥{{item.ticTypePrice}} <span class="qi">起</span> <i class="pull-icon iconfont">&#xe662;</i> </span>
           </div>
           <div class="tickets-area" v-show="true">
-            <div class="area-list-item">
+            <div class="area-list-item" v-for="tics of item.ticTypeList" :key="tics.id">
               <div class="item-info">
-                 <div class="list-item-title">北京故宫大门票成人票</div>
-                 <ul class="item-tips">
-                   <li class="item-ding"><span class="time-icon iconfont">&#xe605;</span>可订明日</li>
-                   <li class="item-tui">随时退</li>
+                 <div class="list-item-title">{{tics.ticName}}</div>
+                 <ul class="item-tips" v-if="tics.ticTips">
+                   <li class="item-ding" v-if="tics.ticTips.Ding"><span class="time-icon iconfont">&#xe605;</span>可订明日</li>
+                   <li class="item-tui" v-if="tics.ticTips.Tui">随时退</li>
                  </ul>
               </div>
               <div class="price-area">
-                <span class="item-price">￥119</span>
-                <button class="item-yd">立即预订</button>
-              </div>
-            </div>
-
-            <div class="area-list-item">
-              <div class="item-info">
-                 <div class="list-item-title">北京故宫大门票成人票</div>
-                 <ul class="item-tips">
-                   <li class="item-ding"><span class="time-icon iconfont">&#xe605;</span>可订明日</li>
-                   <li class="item-tui">随时退</li>
-                 </ul>
-              </div>
-              <div class="price-area">
-                <span class="item-price">￥119</span>
-                <button class="item-yd">立即预订</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="tickets-type">
-          <div class="tickets-type-title">
-            <span class="tickets-name">儿童票</span>
-            <span class="tickets-price">￥100 <span class="qi">起</span> <i class="pull-icon iconfont">&#xe662;</i> </span>
-          </div>
-          <div class="tickets-area" v-show="true">
-            <div class="area-list-item">
-              <div class="item-info">
-                 <div class="list-item-title">北京故宫大门票儿童票</div>
-                 <ul class="item-tips">
-                   <li class="item-ding"><span class="time-icon iconfont">&#xe605;</span>可订明日</li>
-                   <li class="item-tui">随时退</li>
-                 </ul>
-              </div>
-              <div class="price-area">
-                <span class="item-price">￥100</span>
-                <button class="item-yd">立即预订</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="tickets-type">
-          <div class="tickets-type-title">
-            <span class="tickets-name">特惠票</span>
-            <span class="tickets-price">￥99 <span class="qi">起</span> <i class="pull-icon iconfont">&#xe662;</i> </span>
-          </div>
-          <div class="tickets-area" v-show="true">
-            <div class="area-list-item">
-              <div class="item-info">
-                 <div class="list-item-title">北京故宫特惠票</div>
-                 <ul class="item-tips">
-                   <li class="item-ding"><span class="time-icon iconfont">&#xe605;</span>可订明日</li>
-                   <li class="item-tui">随时退</li>
-                 </ul>
-              </div>
-              <div class="price-area">
-                <span class="item-price">￥99</span>
+                <span class="item-price">￥{{tics.ticPrice}}</span>
                 <button class="item-yd">立即预订</button>
               </div>
             </div>
@@ -135,45 +49,22 @@
 
     <div class="detail-list-com">
       <div class="area-title commit">用户评价</div>
-      <div class="commit-container">
+      <div class="commit-container" v-for="item of sightCommit" :key="item.id">
         <div class="commit-info">
-          <span class="left-star">iconfont</span>
+          <span class="left-star">{{item.star}}</span>
           <span class="right-info">
-            <span class="user-name">PChiawei</span>
-            <span class="user-time">2020-05-27</span>
+            <span class="user-name">{{item.userName}}</span>
+            <span class="user-time">{{item.userTime}}</span>
           </span>
         </div>
         <div class="commit-content">
-          北京野生动物园我想说说不同的攻略！！！
-          一，门票150，儿童90（一米及3岁以下免费），大众点评买的票138比较合适，我的建议是车放在停车场，不要自驾路线，不要自驾路线，就做门票包含的小火车，非常好，小孩子非常喜欢！！！第一，私家车单收200门票（土豪随意）第二，私家车非常堵，
+          {{item.comContent}}
         </div>
         <div class="commit-imgs">
-          <div class="imgs-container"><img class="user-img" src="http://img1.qunarzz.com/piao/fusion/2005/13/c34c9d078ab67902.jpg_228x168_b79936e5.jpg" alt=""></div>
-          <div class="imgs-container"><img class="user-img" src="http://img1.qunarzz.com/piao/fusion/2001/88/30ba7655b4291602.jpg_228x168_dd030268.jpg" alt=""></div>
-          <div class="imgs-container"><img class="user-img" src="http://img1.qunarzz.com/piao/fusion/2001/62/dd9976a6426f0302.jpg_228x168_21acf68a.jpg" alt=""></div>
-        </div>
-      </div>
-
-      <div class="commit-container">
-        <div class="commit-info">
-          <span class="left-star">iconfont</span>
-          <span class="right-info">
-            <span class="user-name">PChiawei</span>
-            <span class="user-time">2020-05-27</span>
-          </span>
-        </div>
-        <div class="commit-content">
-          北京野生动物园我想说说不同的攻略！！！
-          一，门票150，儿童90（一米及3岁以下免费），大众点评买的票138比较合适，我的建议是车放在停车场，不要自驾路线，不要自驾路线，就做门票包含的小火车，非常好，小孩子非常喜欢！！！第一，私家车单收200门票（土豪随意）第二，私家车非常堵，
+          <div class="imgs-container" v-for="imgs of item.comImgs" :key="imgs.id"><img class="user-img" :src="imgs.imgUrl"></div>
         </div>
       </div>
     </div>
-    <!-- <div class="detail-list" v-for="(item, index) of list" :key="index">
-        <div class="list-title border-bottom"><span class="list-icon"></span>{{item.title}}</div>
-        <div v-if="item.children" class="item-children">
-          <detail-list :list="item.children"></detail-list>
-        </div>
-    </div> -->
   </div>
 </template>
 
@@ -181,7 +72,10 @@
 export default {
   name: 'DetailList',
   props: {
-    list: Array
+    recomList: Array,
+    titleTitle: String,
+    ticketsList: Array,
+    sightCommit: Array
   }
 }
 </script>
