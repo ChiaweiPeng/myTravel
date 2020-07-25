@@ -23,12 +23,12 @@
       <div class="area-title">景区门票</div>
       <div class="area-title-fu"><span class="fu-border"></span>{{this.titleTitle}}</div>
       <div class="tickets-container">
-        <div class="tickets-type" v-for="item of ticketsList" :key="item.id">
+        <div class="tickets-type" v-for="item of ticketsList" :key="item.id"  @click="handleClick">
           <div class="tickets-type-title">
             <span class="tickets-name">{{item.ticType}}</span>
             <span class="tickets-price">￥{{item.ticTypePrice}} <span class="qi">起</span> <i class="pull-icon iconfont">&#xe662;</i> </span>
           </div>
-          <div class="tickets-area" v-show="true">
+          <div class="tickets-area" v-show="showTheTic">
             <div class="area-list-item" v-for="tics of item.ticTypeList" :key="tics.id">
               <div class="item-info">
                  <div class="list-item-title">{{tics.ticName}}</div>
@@ -76,6 +76,17 @@ export default {
     titleTitle: String,
     ticketsList: Array,
     sightCommit: Array
+  },
+  data () {
+    return {
+      showTheTic: false
+    }
+  },
+  methods: {
+    handleClick (e) {
+      let tics = e.currentTarget.querySelector('.tickets-area')
+      tics.style.display = tics.style.display === 'block' ? 'none' : 'block'
+    }
   }
 }
 </script>
