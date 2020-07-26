@@ -84,7 +84,7 @@ export default {
         line-height : .6rem
         display :flex
         color :#fff
-        background : linear-gradient(top,rgba(0, 0, 0, 0),rgba(0, 0, 0, .8))
+        background : linear-gradient(to bottom,rgba(0, 0, 0, 0),rgba(0, 0, 0, .8))
         .banner-title
             flex :1
             padding-left: .2rem
