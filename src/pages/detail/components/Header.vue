@@ -1,6 +1,6 @@
 <template>
   <div>
-    <router-link tag="div" to="/" class="header-abs" v-show="showAbs"><span class="iconfont abs-back-icon">&#xe658;</span></router-link>
+    <div @click="handleBack" class="header-abs" v-show="showAbs"><span class="iconfont abs-back-icon">&#xe658;</span></div>
     <router-link
     tag="div"
     to="/"
@@ -33,6 +33,9 @@ export default {
       } else {
         this.showAbs = true
       }
+    },
+    handleBack () {
+      this.$router.go(-1)
     }
   },
   mounted () {

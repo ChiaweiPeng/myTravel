@@ -3,10 +3,10 @@
         <swiper :options="swiperOptions">
             <swiper-slide v-for="(page, index) of pages" :key="index">
                 <div class="icons-grid">
-                    <div class="icon"  v-for="item of page" :key="item.id">
+                    <router-link tag="div" class="icon"  v-for="item of page" :key="item.id" :to="'/' + item.link">
                         <img class="icon-img" :src="item.imgUrl"/><!-- src前面别忘了冒号 -->
                         <p class="icon-p">{{item.desc}}</p>
-                    </div>
+                    </router-link>
                 </div>
             </swiper-slide>
         </swiper>

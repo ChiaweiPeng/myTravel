@@ -61,14 +61,27 @@
           {{item.comContent}}
         </div>
         <div class="commit-imgs">
-          <div class="imgs-container" v-for="imgs of item.comImgs" :key="imgs.id"><img class="user-img" :src="imgs.imgUrl"></div>
+          <div class="imgs-container"
+          v-for="imgs of item.comImgs"
+          :key="imgs.id"
+          :indexx="item.id"
+          @click="handleImgClick"
+          >
+            <img class="user-img" :src="imgs.imgUrl">
+          </div>
         </div>
       </div>
     </div>
+
+    <fade-animation>
+      <common-gallery :imgs="imgList" v-show="showGallery" @close="handleGalleryClose"></common-gallery>
+    </fade-animation>
   </div>
 </template>
 
 <script>
+import CommonGallery from 'common/gallery/Gallery'
+import FadeAnimation from 'common/animation/FadeAnimation'
 export default {
   name: 'DetailList',
   props: {
@@ -79,13 +92,38 @@ export default {
   },
   data () {
     return {
-      showTheTic: false
+      showTheTic: false,
+      showGallery: false,
+      listIndex: ''
+    }
+  },
+  components: {
+    CommonGallery,
+    FadeAnimation
+  },
+  computed: {
+    imgList () {
+      let imgList = []
+      if (this.listIndex !== '') {
+        let comImgs = this.sightCommit[this.listIndex].comImgs
+        comImgs.forEach((item, index) => {
+          imgList.push(comImgs[index].imgUrl)
+        })
+      }
+      return imgList
     }
   },
   methods: {
     handleClick (e) {
       let tics = e.currentTarget.querySelector('.tickets-area')
       tics.style.display = tics.style.display === 'block' ? 'none' : 'block'
+    },
+    handleImgClick (e) {
+      this.listIndex = parseInt(e.currentTarget.getAttributeNode('indexx').value) - 1
+      this.showGallery = true
+    },
+    handleGalleryClose () {
+      this.showGallery = false
     }
   }
 }

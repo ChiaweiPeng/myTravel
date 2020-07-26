@@ -14,7 +14,7 @@
                       <div class="sight-score-score"><span class="score-num"> {{ this.scoreNum }} </span>分 超赞</div>
                       <div class="sight-coms"><span class="coms-num">{{this.comsNum}}</span>条评论 <span class="gl-num">{{this.glNum}}</span>条攻略</div>
                   </div>
-                  <span class="small-arrow">></span>
+                  <span class="small-arrow iconfont">&#xe612;</span>
                 </div>
 
                 <div class="sight-intro">
@@ -22,10 +22,10 @@
                   景点简介
                   <div class="sight-coms">开放时间、贴士</div>
                   </div>
-                  <span class="small-arrow">></span>
+                  <span class="small-arrow iconfont">&#xe612;</span>
                 </div>
               </div>
-              <div class="map-pos"><span class="map-icon iconfont">&#xe62b;</span>{{this.mapPos}}<span class="small-arrow">></span></div>
+              <div class="map-pos"><span class="map-icon iconfont">&#xe62b;</span>{{this.mapPos}}<span class="small-arrow iconfont">&#xe612;</span></div>
           </div>
 
         <fade-animation>

@@ -23,7 +23,8 @@ export default {
         pagination: '.swiper-pagination',
         paginationType: 'fraction',
         observeParents: true,
-        observer: true
+        observer: true,
+        initialSlide: 0
       }
     }
   },
