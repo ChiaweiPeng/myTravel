@@ -26,7 +26,7 @@ export default new Router({
       component: Detail
     },
     {
-      path: '/sightticket',
+      path: '/sightticket/',
       name: 'SightTicket',
       component: SightTicket
     },
