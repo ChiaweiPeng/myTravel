@@ -1,4 +1,5 @@
-# new-travel
+# myTravel
+vue基础 仿去哪儿移动端旅游网站项目
 
 ## Project setup
 ```
@@ -15,5 +16,3 @@ npm run serve
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
