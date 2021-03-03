@@ -4,17 +4,30 @@ module.exports = {
   publicPath: process.env.NODE_ENV === 'production'
     ? '/project'
     : '/',
-    devServer: {
-        proxy:{
-          '/api': {
-          target: 'http://120.79.38.52:80'
+  // devServer: {
+  //   proxy: {
+  //     '/api': {
+  //       target: 'http://111.229.100.170:8003',
+  //       changeOrigin: true
+  //     }
+  //   }
+  // },
+  devServer:{
+    proxy: {
+      '/api': {
+        target: 'http://111.229.100.170:8003',
+        changeOrigin:true,
+        pathRewrite: {
+          // 要加重定向
+          '^/api': '/travel-mock'
         }
-      }  
-    },
-    chainWebpack: (config) => {
-        config.resolve.alias
-          .set('styles',path.join(__dirname,'./src/assets/styles/'))
-          .set('@',path.join(__dirname,'./src/'))
-          .set('common',path.join(__dirname,'./src/common/'))
+      }
     }
+  },
+  chainWebpack: (config) => {
+    config.resolve.alias
+      .set('styles', path.join(__dirname, './src/assets/styles/'))
+      .set('@', path.join(__dirname, './src/'))
+      .set('common', path.join(__dirname, './src/common/'))
   }
+}

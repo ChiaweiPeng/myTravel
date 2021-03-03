@@ -6,7 +6,7 @@
                 <div class="sight-info">
                     <div class="sight-title">{{item.sightName}}</div>
                     <div class="sight-com">
-                        <span class="sight-star">{{item.scoreNum}}</span>
+                        <span class="sight-star">{{item.scoreNum}}分 </span>
                         <span class="com-num">{{item.comsNum}}条评论</span>
                     </div>
                     <div class="sight-price">

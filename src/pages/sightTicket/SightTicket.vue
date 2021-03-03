@@ -32,7 +32,7 @@ export default {
       res = res.data
       if (res.ret && res.data) {
         const data = res.data
-        this.list = data.list
+        this.list = data
       }
     }
   },

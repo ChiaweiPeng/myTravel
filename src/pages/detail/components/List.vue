@@ -53,7 +53,8 @@
         <div class="commit-info">
           <span class="left-star">{{item.star}}</span>
           <span class="right-info">
-            <span class="user-name">{{item.userName}}</span>
+            <span class="user-name">{{item.userName}} </span>
+
             <span class="user-time">{{item.userTime}}</span>
           </span>
         </div>
@@ -193,9 +194,10 @@ export default {
           .area-list-item:first-child
             border-top none
   .commit
+    padding-bottom 5px
     border-bottom 1px solid #eaeaea
   .commit-container
-    padding .3rem 0
+    padding-bottom .3rem
     border-bottom 1px solid #eaeaea
     line-height .4rem
   .commit-info
@@ -205,15 +207,19 @@ export default {
     .right-info
       font-size .24rem
       color #999
+  .commit-content
+    color #616161
+    font-size .2rem
   .commit-imgs
-    display flex
-    justify-content space-evenly
     margin-top .3rem
+    overflow hidden
     .imgs-container
-      width: 33.33%
+      float left
+      width: 31.33%
       margin-bottom .1rem
       margin-left: .07rem;
       margin-right: .07rem;
       .user-img
         width 100%
+        height 82px
 </style>

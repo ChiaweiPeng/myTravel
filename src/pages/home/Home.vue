@@ -48,8 +48,8 @@ export default{
         const data = res.data
         this.swiperList = data.swiperList
         this.iconsList = data.iconsList
-        this.recLists = data.recLists
-        this.qnrLists = data.qnrLists
+        this.recLists = data.recommendList
+        this.qnrLists = data.weekendList
       }
     }
   },

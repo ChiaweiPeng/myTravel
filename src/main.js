@@ -13,6 +13,7 @@ import '../node_modules/vue-awesome-swiper/node_modules/swiper/dist/css/swiper.c
 Vue.config.productionTip = false
 Vue.use(VueAwesomeSwiper)
 
+
 new Vue({
   router,
   store,

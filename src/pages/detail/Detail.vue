@@ -62,7 +62,7 @@ export default {
         this.sightName = data.sightName
         this.bannerImg = data.bannerImg
         this.galleryImgs = data.galleryImgs
-        this.categoryList = data.categoryList
+        // this.categoryList = data.categoryList
         this.scoreNum = parseFloat(data.scoreNum)
         this.comsNum = data.comsNum
         this.glNum = data.glNum

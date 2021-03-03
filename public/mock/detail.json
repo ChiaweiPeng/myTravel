@@ -1,0 +1,185 @@
+{
+  "ret": true,
+  "data": {
+    "sightName": "故宫(AAAAA景区)",
+    "bannerImg": "//img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_600x330_f922b488.jpg",
+    "galleryImgs": [
+      "https://imgs.qunarzz.com/sight/p55/201211/04/fbcab3e5d6479ce893835fbb.jpg_350x240_df8ba9f7.jpg",
+      "https://imgs.qunarzz.com/sight/p0/1907/ca/ca68bd95bc36bdba3.img.jpg_350x240_0d9e7931.jpg",
+      "https://imgs.qunarzz.com/wugc/p123/201211/19/a2045d091f02b25493835fbb.png_350x240_cf4cd08e.png",
+      "https://imgs.qunarzz.com/sight/p0/1410/e3/73da8d3e19cdc41c1932d4fcd22ec792.water.jpg_350x240_af846382.jpg",
+      "https://imgs.qunarzz.com/wugc/p238/201306/16/d9090c728fed64eb93835fbb.jpg_350x240_afe6c0fa.jpg",
+      "https://imgs.qunarzz.com/sight/p0/1501/af/af47583adca3f972.water.jpg_350x240_95007698.jpg",
+      "http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_800x800_70debc93.jpg",
+      "http://img1.qunarzz.com/sight/p0/1709/76/7691528bc7d7ad3ca3.img.png_800x800_9ef05ee7.png"
+    ],
+    "scoreNum": 10,
+    "comsNum": 99,
+    "glNum": 100,
+    "mapPos": "北京市东城区景山前街4号",
+    "recomList": [
+      {
+        "id": 1,
+        "recTitle": "北京故宫大门票+珍宝馆+资深导游讲解（配无线耳麦）*成人票",
+        "recTips": {
+          "Ding": true,
+          "Tui": true
+        },
+        "recPrice": 99
+      },
+      {
+        "id": 2,
+        "recTitle": "【全天票】故宫成人票【刷证件入园，全天可进】",
+        "recTips": {
+          "Ding": true,
+          "Tui": true
+        },
+        "recPrice": "40"
+      },
+      {
+        "id": 3,
+        "recTitle": "故宫门票学生票(上午场-淡季)",
+        "recTips": {
+          "Ding": true,
+          "Tui": true
+        },
+        "recPrice": "20"
+      }
+    ],
+    "titleTitle": "上午场",
+    "ticketsList": [
+      {
+        "id": 1,
+        "ticType": "成人票",
+        "ticTypePrice": "38.2",
+        "ticTypeList": [
+          {
+            "id": 1,
+            "ticName": "【全天票】故宫成人票【刷证件入园，全天可进】",
+            "ticTips": {
+              "Ding": true,
+              "Tui": true
+            },
+            "ticPrice": "40"
+          },
+          {
+            "id": 2,
+            "ticName": "【全天票】故宫成人票-身份证直接入园",
+            "ticTips": {
+              "Tui": true
+            },
+            "ticPrice": "38.3"
+          },
+          {
+            "id": 3,
+            "ticName": "故宫门票成人票(上午场-淡季)",
+            "ticTips": {
+              "Ding": true
+            },
+            "ticPrice": "40"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "ticType": "学生票",
+        "ticTypePrice": "17.6",
+        "ticTypeList": [
+          {
+            "id": 1,
+            "ticName": "故宫门票学生票(上午场-淡季)",
+            "ticTips": {
+              "Ding": true,
+              "Tui": true
+            },
+            "ticPrice": "20"
+          },
+          {
+            "id": 2,
+            "ticName": "【全天票】故宫学生大门票-出示证件入园",
+            "ticTips": {
+              "Ding": true
+            },
+            "ticPrice": "17.6"
+          },
+          {
+            "id": 3,
+            "ticName": "【全天可进-刷证件入园】故宫学生大门票",
+            "ticTips": {
+              "Tui": true
+            },
+            "ticPrice": "19.9"
+          }
+        ]
+      }
+    ],
+    "sightCommit": [
+      {
+        "id": 1,
+        "star": "",
+        "userName": "Pchiawei",
+        "userTime": "2020-03-01",
+        "comContent": "故宫是无论春夏秋冬,风霜雨雪都适合游玩的景点，不过深入了解一天肯定是不够的，可以多去领略几次，讲解导游刘洋很优秀，讲的面面俱到，还会穿插一些典故，故宫这种文化底蕴深厚的地方，游览的时候是必须要有讲解的，这样才能更深刻的去感受故宫！",
+        "comImgs": [
+          {
+            "id": 1,
+            "imgUrl": "https://imgs.qunarzz.com/piao/fusion/2103/87/275f63de652fc602.jpg_228x168_b75b1ab7.jpg"
+          },
+          {
+            "id": 2,
+            "imgUrl": "https://imgs.qunarzz.com/piao/fusion/2103/8e/2ac575f435233e02.jpg_228x168_03d0bc0f.jpg"
+          },
+          {
+            "id": 3,
+            "imgUrl": "https://imgs.qunarzz.com/piao/fusion/2103/4b/69bc7e382f5fce02.jpg_228x168_f6237f5d.jpg"
+          },
+          {
+            "id": 4,
+            "imgUrl": "https://imgs.qunarzz.com/piao/fusion/2103/53/26cd8cb3ce345e02.jpg_228x168_2e85a56f.jpg"
+          },
+          {
+            "id": 5,
+            "imgUrl": "https://imgs.qunarzz.com/piao/fusion/2103/a2/1eec3cec3960a602.jpg_228x168_e5ce7c1d.jpg"
+          },
+          {
+            "id": 6,
+            "imgUrl": "https://imgs.qunarzz.com/piao/fusion/2103/4b/e721823245d2d202.jpg_228x168_dcd2a7e4.jpg"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "star": "",
+        "userName": "Pchiawei",
+        "userTime": "2020-02-12",
+        "comContent": "今天的向导是小陈导游，非常好，讲解很细致，整个行程都没有休息，嗓子都哑了，真的很敬业，这次的深度游体验真的很棒，旅行社的安排管理都非常规范，下次还要体验别的行程",
+        "comImgs": [
+          {
+            "id": 1,
+            "imgUrl": "https://imgs.qunarzz.com/piao/fusion/2102/2b/8add3224c3497302.jpg_240x240_ad88e01d.jpg"
+          },
+          {
+            "id": 2,
+            "imgUrl": "https://imgs.qunarzz.com/piao/fusion/2102/25/f08e4fa8cb19f902.jpg_240x240_a41cdad4.jpg"
+          },
+          {
+            "id": 3,
+            "imgUrl": "https://imgs.qunarzz.com/piao/fusion/2102/c9/2f7aabc52c01c302.jpg_240x240_3bfc539d.jpg"
+          },
+          {
+            "id": 4,
+            "imgUrl": "https://imgs.qunarzz.com/piao/fusion/2102/39/6cbcde519e27d02.jpg_240x240_0caa6ff7.jpg"
+          },
+          {
+            "id": 5,
+            "imgUrl": "https://imgs.qunarzz.com/piao/fusion/2102/b5/559fbc63a080f102.jpg_240x240_8e27b095.jpg"
+          },
+          {
+            "id": 6,
+            "imgUrl": "https://imgs.qunarzz.com/piao/fusion/2102/3c/0181819032eb9202.jpg_240x240_b6e5ead9.jpg"
+          }
+        ]
+      }
+    ]
+  }
+}

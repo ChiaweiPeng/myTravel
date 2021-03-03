@@ -9,7 +9,7 @@
                         <span class="sight-tag" v-for="(tags,index) of item.sightTags" :key="index">{{tags}}</span>
                     </div>
                     <div class="sight-price">
-                        <span class="sell">{{item.selled}}</span>
+                        <span class="sell">已售{{item.selled}}</span>
                         <span><span class="price">￥{{item.price}}</span> 起</span>
                     </div>
                 </div>
